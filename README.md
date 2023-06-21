@@ -1,16 +1,14 @@
 # quiz_app
+This is a basic Quiz application, the objective of the app is to check the user's basic knowledge of Flutter.
 
-A new Flutter project.
+The questions are stored inside the data model folder.
 
-## Getting Started
+this is how the code logic works::
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app starts on Quiz_app.dart -> this is the common screen which will be updated throughout the app
+Start_screen-> This is the first screen on the app,
+Questions_screen -> This screen displays questions and their answers.
+result_screen-> This screen displays the final result. for doing so the screen is redirected to the Questions_summery class for getting the list of questions and answers.
+questions_summery -> This screen displays the questions that the user solved with the correct answers and the answers given by the users. It redirects to summeryItems screen
+questions. dart -> This is a data model that stores some dummy questions.
+result_identifier -> This identifies if the question was answered correctly and updates the color for the questions.
